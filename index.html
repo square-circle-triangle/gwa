@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Caroma</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<link rel="stylesheet" href="css/reset.css">
+	<link rel="stylesheet" href="css/global.css">
+	
+	<script type="text/javascript" src="js/libs/head.min.js"></script>
+	
+	<script type="text/javascript">
+		var pkBaseURL = (("https:" == document.location.protocol) ? "https://localhost/piwik/" : "http://localhost/piwik/");
+		document.write(unescape("%3Cscript src='" + pkBaseURL + "piwik.js' type='text/javascript'%3E%3C/script%3E"));
+	</script>
+	
+</head>
+
+<body>
+	<div id="container">
+			
+			<nav id="nav_wrap">
+				<a id="back_btn" href="#"></a>
+				<a id="home_btn" href="#home"></a>
+			</nav>
+
+
+			<!-- HOME -->
+			<section id="home_wrap" class="panel">
+				<div class="sub_section">
+					<div class="overlay header">
+						<div class="title" style="padding-top:70px;">
+							<h1>Browse Toilets</h1>
+							<p>Be inspired by our extensive range of toilets.</p>
+						</div>
+						<a id="inspiration_btn" href="#styles" class="btn_next">
+							<img src="images/btn_next_large.png" />
+						</a>
+					</div>
+					<div class="images">
+						<img src="images/link_inspire.jpg"  />
+					</div>
+				</div>
+				<div class="sub_section">
+					<div class="overlay header">
+						<div class="title">
+							<h1>Make a Selection Using Your Measurements</h1>
+							<p>Choose a toilet using your current toilet measurements with our easy to use guide.</p>
+						</div>
+						<a id="traps_btn" href="#traps" class="btn_next">
+							<img src="images/btn_next_large.png" />
+						</a>
+					</div>
+					<div class="images">
+						<img src="images/link_traps.jpg"  />
+					</div>
+				</div>
+				
+			</section>
+			<!-- End HOME -->
+			
+
+			<!-- TRAPS -->
+			<section id="traps_wrap" class="panel">
+				<div class="sub_section">
+					<div class="overlay header">
+						<div class="title">
+							<h1>Does your toilet drainage trap go into the floor?</h1>
+							<p>An S trap toilet has a drainage pipe that exits through the floor.</p>
+						</div>
+						<a id="strap_btn" href="#trap/s" class="btn_next">
+							<img src="images/btn_next_large.png" />
+						</a>
+					</div>
+					<div class="images">
+						<img src="images/link_strap.jpg"  />
+					</div>
+				</div>
+				
+				<div class="sub_section">
+					<div class="overlay header">
+						<div class="title">
+							<h1>Does your toilet drainage trap go into the wall?</h1>
+							<p>A P trap toilet has a drainage pipe that exits through the wall.</p>
+						</div>
+						<a id="ptrap_btn" href="#trap/p" class="btn_next">
+							<img src="images/btn_next_large.png" />
+						</a>
+					</div>
+					<div class="images">
+						<img src="images/link_ptrap.jpg"  />
+					</div>
+				</div>							
+			</section>
+			<!-- End TRAPS -->
+
+
+			<!-- TRAP -->
+			<section id="trap_wrap" class="panel">
+				<div class="header">
+						<div class="title strap">
+							<h1>Does your toilet drainage trap go into the floor?</h1>
+							<p>An S trap toilet has a drainage pipe that exits through the floor.</p>
+						</div>
+						<div class="title ptrap">
+							<h1>Does your toilet drainage trap go into the wall?</h1>
+							<p>A P trap toilet has a drainage pipe that exits through the wall.</p>
+						</div>
+				</div>
+				<div class="videos">
+					<div class="video strap" data-code="s1">
+						<div class="thumb">
+							<img src="videos/s1.jpg"  />
+							<a href="#" class="btn_play">
+								<img src="images/btn_play.png" />
+							</a>
+						</div>
+						<div class="bottom">
+							<h2>Measure the set out distance?</h2>
+							<p>Video 0:13</p>
+						</div>
+					</div>
+					<div class="video strap" data-code="s2">
+						<div class="thumb">
+							<img src="videos/s2.jpg" />
+							<a href="#" class="btn_play">
+								<img src="images/btn_play.png" />
+							</a>
+						</div>
+						<div class="bottom">
+							<h2>Determine the location of the Stop Cock?</h2>
+							<p>Video 0:10</p>
+						</div>
+					</div>
+					<div class="video ptrap" data-code="p1">
+						<div class="thumb">
+							<img src="videos/p1.jpg"  />
+							<a href="#" class="btn_play">
+								<img src="images/btn_play.png" />
+							</a>
+						</div>
+						<div class="bottom">
+							<h2>What is the set out distance?</h2>
+							<p>Video 0:13</p>
+						</div>
+					</div>
+					<div class="video ptrap" data-code="p2">
+						<div class="thumb">
+							<img src="videos/p2.jpg" />
+							<a href="#" class="btn_play">
+								<img src="images/btn_play.png" />
+							</a>
+						</div>
+						<div class="bottom">
+							<h2>Determine the location of the Stop Cock?</h2>
+							<p>Video 0:10</p>
+						</div>
+					</div>
+					<div class="clearer"></div>
+				</div>
+				<div class="measures">
+					<div class="header">
+						<div class="title">
+							<h1>Ready to go!</h1>
+							<p>Use your measurements from home to determine the ideal toilet suite for your bathroom.</p>
+						</div>
+					</div>
+
+					<div class="divisor"></div>
+
+					<div class="input_panel">
+						<h2>Please enter your measurements</h2>
+						<div class="field mea1" >
+							<label>The set out distance</label>
+							<input type="text" data-index="1" />
+							<span>mm</span>
+						</div>
+						<div class="field mea2" >
+							<label>Floor to stop cock</label>
+							<input type="text" data-index="2" />
+							<span>mm</span>
+						</div>
+						<button class="btn_search disabled"></button>
+						<div class="disclaimer">
+							This toilet selector should be used as a guide only. Please consult with your plumber and contact a Bunnings team member for further assistance.
+						</div>
+						<div class="keypad">
+							<button data-value="1"><img src="images/btn_1.png" /></button>
+							<button data-value="2"><img src="images/btn_2.png" /></button>
+							<button data-value="3"><img src="images/btn_3.png" /></button>
+							<button data-value="4"><img src="images/btn_4.png" /></button>
+							<button data-value="5"><img src="images/btn_5.png" /></button>
+							<button data-value="6"><img src="images/btn_6.png" /></button>
+							<button data-value="7"><img src="images/btn_7.png" /></button>
+							<button data-value="8"><img src="images/btn_8.png" /></button>
+							<button data-value="9"><img src="images/btn_9.png" /></button>
+							<button data-value="0"><img src="images/btn_0.png" /></button>
+							<button class="btn_clear" data-value="clear"><img src="images/btn_clear.png" /></button>
+						</div>
+						<div class="link_panel">
+							<p>Don't know your measurements?</p>
+							<a class="button sml" href="#styles">Browse Toilets</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+			<!-- End TRAP -->
+
+			<!-- STYLES -->
+			<section id="styles_wrap" class="panel">
+				<div class="styles_wrap_inner">
+					<div class="scrollable">
+						<div class="header">
+							<div class="title">
+								<h1>Select a style</h1>
+								<p>Select the style of toilet you like and we'll find you something that matches your requirements.</p>
+							</div>
+						</div>
+						<ul class="items">
+
+						</ul>
+						<div class="clearer"></div>
+					</div>
+					
+					<div class="btn_scroll_up"></div>
+					<div class="btn_scroll_down"></div>
+					
+				</div>
+
+			</section>
+			<!-- End STYLES -->
+			
+
+			<!-- PRODUCTS -->
+			<section id="products_wrap" class="panel">
+				<div id="products_wrap_inner" >
+					<div class="scrollable">
+						<div class="header">
+							<div class="title">
+								<h1>Five product matches found</h1>
+								<p>We found <span class="number">five</span> <span class="subject">toiles</span> that would be suitable for your bathroom. Don't forget to check the measurements with your plumber before purchasing!</p>
+							</div>
+						</div>
+						<ul class="items">
+						</ul>
+					</div>
+					
+					<div class="btn_scroll_up"></div>
+					<div class="btn_scroll_down"></div>
+				</div>
+			</section>
+			<!-- End PRODUCTS -->
+			
+			
+			<!-- FOOTER -->
+			<footer id="footer_wrap">
+				<div class="logos">
+					<a href="#" class="logo" data-brand="caroma">
+						<img src="images/logo_caroma.png" />
+					</a>
+					<a href="#" class="logo" data-brand="fowler">
+						<img src="images/logo_fowler.png" />
+					</a>
+					<a href="#" class="logo" data-brand="stylus">
+						<img src="images/logo_stylus.png" />
+					</a>
+					<a href="#" class="logo" data-brand="donson">
+						<img src="images/logo_donson.png" />
+					</a>
+				</div>
+			</footer>
+			<!-- END FOOTER -->
+
+	<!--
+			<div id="scroll_prompt"></div>
+		-->
+			
+			
+			<!-- PRODUCT DETAILS -->
+			<div id="product_details" class="full_mask popup_outer">
+				<div id="product_details_inner" class="popup">
+				</div>
+			</div>			
+			<!-- End PRODUCT DETAILS -->
+
+	
+			<!-- VIDEOS -->
+			<div id="video_wrap" class="video_panel full_mask popup_outer">
+				<div class="popup">
+					<div class="header">
+						<div class="title">
+							<h1>Caroma Profile 4 Close Coupled Toilet Suite</h1>
+						</div>						
+						<a href="#products" class="btn_close">
+						</a>
+					</div>
+					
+					<div class="main">
+						<div class="video_player_wrapper">
+						</div>
+					</div>
+					
+					
+				</div>
+			</div>
+			<!-- END VIDEOS -->
+			
+			
+			<!-- ALERTS -->
+			<div id="no_styles_found" class="alert full_mask popup_outer">
+				<div class="popup">
+					<div class="header">
+						<div class="title">
+							<h1>								
+								No styles found!
+							</h1>
+						</div>	
+						<a href="#" class="btn_close_alert"></a>
+					</div>
+					<div class="main">
+						<p>You may have special plumbing requirements, please contact a Bunnings team member for further assistance.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div id="no_products_found" class="alert full_mask popup_outer">
+				<div class="popup">
+					<div class="header">
+						<div class="title">
+							<h1>								
+								No products found!
+							</h1>
+						</div>
+						<a href="#" class="btn_close_alert"></a>
+					</div>
+					<div class="main">
+						<p>You may have special plumbing requirements, please contact a Bunnings team member for further assistance.</p>
+					</div>
+				</div>	
+			</div>
+
+			<div id="measures_warning_popup" class="full_mask popup_outer">
+				<div class="popup">
+					<div class="header">
+						<div class="title">
+							<h1>								
+								Don't forget to check your plumbing measurements before purchasing....
+							</h1>
+						</div>
+						<a href="#" class="btn_close"></a>
+					</div>
+					<div class="main">
+						<p>Please ensure you determine the correct plumbing requirements with your plumber before purchasing your toilet.</p>
+						<p>You can use our how to measure guides for a detailed understanding.</p>
+						<div class="buttons">
+							<a href="#traps" class="button med">View how to measure guide</a>
+							<a href="#styles" class="button med">Continue to Browse Toilets</a>
+						</div>
+					</div>
+				</div>	
+			</div>
+			
+			
+			<!-- END ALERTS -->
+
+	</div>
+	
+	<script id="style_row_template" type="text/x-jquery-tmpl">
+		<li data-url='{{url}}'>
+			<div class="img">
+				<img src="images/styles/list/{{id}}.jpg" />
+			</div>
+			<div class="desc">
+				<h2>{{name}}</h2>
+				<p>{{description}}</p>
+				{{#productCount}}
+				<p class="count">{{productCount}}</p>
+				{{/productCount}}
+			</div>
+			<div class="arrow">
+				<img src="images/btn_next_small.png" />
+			</div>
+			<div class="clearer"></div>
+		</li>
+	</script>
+	
+	<script id="product_row_template" type="text/x-jquery-tmpl">
+		<li data-model='{{model}}'>
+			<div class="img">
+				<img src="images/products/list/{{heroImage}}" />
+			</div>
+			<div class="desc">
+				<h2>{{name}}</h2>
+				<p>This Australian designed toilet suite delivers modern looks and easy clean style at an affordable price.</p>
+
+			</div>
+			<div class="arrow">
+				<img src="images/btn_next_small.png" />
+			</div>
+			<div class="clearer"></div>
+		</li>
+	</script>
+
+	<script id="product_details_template" type="text/x-jquery-tmpl">
+		<div class="header">
+			<div class="title">
+				<h1>{{name}}</h1>
+			</div>						
+			<a href="#products" class="btn_close"></a>
+		</div>
+		<div class="gallery">
+
+			{{#gallery}}
+				<div class="figure">
+					<img src="images/products/full/{{.}}" width="820px" height="710px" />
+					<div class="figcaption"></div>
+				</div>
+			{{/gallery}}
+
+			<div class="overlay">
+				<button class="prev arrow"><img src="images/btn_gallery_prev.png" /></button>
+				<button class="next arrow"><img src="images/btn_gallery_next.png" /></button>
+				<div class="thumbs">
+					{{#gallery}}
+						<button><img src="images/products/thumbs/{{.}}" /></button>
+					{{/gallery}}
+				</div>
+			</div>
+		</div>
+		<div class="main">
+			<div class="main_inner">
+				<div class="col1">
+					{{{description}}}
+					<h2>Features</h2>
+					{{{features}}}
+				</div>
+				<div class="col2">
+					<img src="images/wels{{waterRating}}.png" />
+				</div>
+			</div>
+		</div>
+		<div class="footer">
+			<div class="col1">
+				<img src="images/products/list/{{heroImage}}" />
+			</div>
+			<div class="col2">
+				<h2>Pickup Details</h2>
+				<p>Item number {{itemNumber}}</p>
+				<p>Product number {{model}}</p>
+			</div>
+			{{#showMore}}
+			<a href="#" class="btn_more">
+				<span>Things to Know</span>
+			</a>
+			{{/showMore}}
+		</div>
+		<div class="more_panel">
+			<h2>Things you need know</h2>
+			<p>Please check with your plumber to ensure this toilet is appropriate for your installation before you purchase.</p>
+			<p>Our easy how to measure guide can provide you with a detailed understanding of measurement requirements.</p>
+			
+			<div class="buttons">
+				<a href="#traps" class="btn_guide button med">View how to measure guide</a>
+				<a href="#" class="btn_close button med">Close</a>
+			</div>
+		</div>
+	</script>
+	
+	<script src="js/libs/jquery-1.6.4.min.js"></script>
+
+	<script type="text/javascript" src="js/libs/underscore-min.js"></script>
+	<script type="text/javascript" src="js/libs/sugar-1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/mustache.js"></script>
+	<script type="text/javascript" src="js/libs/backbone-min.js"></script>
+	<script type="text/javascript" src="js/libs/swfobject.js"></script>
+	<script type="text/javascript" src="js/libs/publisher.js"></script>
+	<script type="text/javascript" src="js/app/helpers/scrollable.js"></script>
+	<script type="text/javascript" src="js/libs/jquery.carousel.js"></script>
+	<script type="text/javascript" src="js/libs/log4javascript.js"></script>
+	<script type="text/javascript" src="js/libs/disable_select.js"></script>
+	<!-- Application specific -->
+	<script type="text/javascript" src="js/app/protos.js"></script>
+	<script type="text/javascript" src="js/app/app.js"></script>
+	<script type="text/javascript" src="js/app/controllers/keypad_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/navigation_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/data_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/search_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/video_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/popup_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/styles_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/products_controller.js"></script>
+	<script type="text/javascript" src="js/app/controllers/tracking_controller.js"></script>
+	<script type="text/javascript" src="js/app/models/style.js"></script>
+	<script type="text/javascript" src="js/app/models/product.js"></script>
+
+	<!-- Piwik Tracking Code -->
+	<noscript><p><img src="http://localhost/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+	<!-- End Piwik Tracking Code -->
+
+
+
+</body>
+</html>
+

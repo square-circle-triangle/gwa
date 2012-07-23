@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Image checker</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+
+	<link rel="stylesheet" href="css/reset.css">
+	
+	<script type="text/javascript" src="js/libs/head.min.js"></script>
+
+	<style type="text/css" media="screen">
+		#images{
+			width:90%;
+			margin: 0 auto;
+		}
+		h2{
+			font-size:20px;
+		}
+		.product{
+			border: 1px solid black;
+			padding:10px;
+		}
+		.imageset{
+
+			padding:10px;
+			border:1px solid grey;
+		}
+		.imageset .image{
+			float:left;
+			width:200px;
+			height:120px;
+		}
+		.imageset img{
+			width:100px;
+			height:100px;
+		}
+		.clearer{
+			clear:both;
+		}
+		
+	</style>
+
+	
+</head>
+
+<body>
+
+			
+	<div id="images">
+		
+	</div>
+			
+
+	<script id="product_template" type="text/mustache">
+		<div class="product">
+			<h2>{{name}} - {{model}}</h2>
+
+			<div class="imageset">
+				<h3>Hero images</h3>
+				<p>{{heroImage}}</p>			
+				<div class="image">
+					Full:
+					<img src="images/products/full/{{heroImage}}" />
+				</div>
+				<div class="image">
+					List:
+					<img src="images/products/list/{{heroImage}}" />
+				</div>
+				<div class="image">
+					Thumb:
+					<img src="images/products/thumbs/{{heroImage}}" />
+				</div>
+				<div class="clearer"></div>
+			</div>
+
+			<div class="imageset">
+				<h3>Line images</h3>
+				<p>{{lineImage}}</p>
+				<div class="image">
+					Full:
+					<img src="images/products/full/{{lineImage}}" />
+				</div>
+				<div class="image">
+					List:
+					<img src="images/products/list/{{lineImage}}" />
+				</div>
+				<div class="image">
+					Thumb:
+					<img src="images/products/thumbs/{{lineImage}}" />
+				</div>
+				<div class="clearer"></div>
+			</div>
+
+			<div class="imageset">
+				<h3>Box images</h3>
+				<p>{{boxImage}}</p>
+				<div class="image">
+					Full:
+					<img src="images/products/full/{{boxImage}}" />
+				</div>
+				<div class="image">
+					List:
+					<img src="images/products/list/{{boxImage}}" />
+				</div>
+				<div class="image">
+					Thumb:
+					<img src="images/products/thumbs/{{boxImage}}" />
+				</div>
+				<div class="clearer"></div>
+			</div>
+
+		</div>
+		<br />
+	</script>
+	
+	<script src="js/libs/jquery-1.6.4.min.js"></script>
+	<script type="text/javascript" src="js/libs/sugar-1.0.min.js"></script>
+	<script type="text/javascript" src="js/libs/mustache.js"></script>
+	<script type="text/javascript" src="js/app/models/product.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			var res = "";
+			var template = $("#product_template").text();
+
+			allProducts.forEach(function(product){
+				res += Mustache.to_html(template,product);
+			});
+
+			$("#images").html(res);
+		});
+	</script>
+
+	
+
+</body>
+</html>
+
